@@ -13,11 +13,11 @@ export default class Controls {
     this.time = this.experience.time
     this.camera = this.experience.camera
     this.room = this.experience.world.room.actualRoom
-    this.room.children.forEach((child) => {
-      if (child.type === 'RectAreaLight') {
-        this.rectLight = child
-      }
-    })
+    // this.room.children.forEach((child) => {
+    //   if (child.type === 'RectAreaLight') {
+    //     this.rectLight = child
+    //   }
+    // })
     this.circleFirst = this.experience.world.floor.circleFirst
     this.circleSecond = this.experience.world.floor.circleSecond
     this.circleThird = this.experience.world.floor.circleThird
@@ -92,8 +92,8 @@ export default class Controls {
         // console.log("fired desktop");
 
         this.room.scale.set(1, 1, 1)
-        this.rectLight.width = 0.5
-        this.rectLight.height = 0.7
+        // this.rectLight.width = 0.5
+        // this.rectLight.height = 0.7
         this.camera.orthographicCamera.position.set(0, 6.5, 10)
         this.room.position.set(0, 0, 0)
         // First section -----------------------------------------
@@ -148,14 +148,14 @@ export default class Controls {
             },
             'same'
           )
-          .to(
-            this.rectLight,
-            {
-              width: 0.5 * 4,
-              height: 0.7 * 4,
-            },
-            'same'
-          )
+        // .to(
+        //   this.rectLight,
+        //   {
+        //     width: 0.5 * 4,
+        //     height: 0.7 * 4,
+        //   },
+        //   'same'
+        // )
 
         // Third section -----------------------------------------
         this.thirdMoveTimeline = new GSAP.timeline({
@@ -179,8 +179,8 @@ export default class Controls {
         // Resets
         this.room.scale.set(0.6, 0.6, 0.6)
         this.room.position.set(0, 0, 0)
-        this.rectLight.width = 0.3
-        this.rectLight.height = 0.4
+        // this.rectLight.width = 0.3
+        // this.rectLight.height = 0.4
         this.camera.orthographicCamera.position.set(0, 6.5, 10)
 
         // First section -----------------------------------------
@@ -217,14 +217,14 @@ export default class Controls {
             },
             'same'
           )
-          .to(
-            this.rectLight,
-            {
-              width: 0.3 * 3.4,
-              height: 0.4 * 3.4,
-            },
-            'same'
-          )
+          // .to(
+          //   this.rectLight,
+          //   {
+          //     width: 0.3 * 3.4,
+          //     height: 0.4 * 3.4,
+          //   },
+          //   'same'
+          // )
           .to(
             this.room.position,
             {

@@ -1,7 +1,8 @@
 import { EventEmitter } from 'events'
-import Experience from './Experience.js'
 import GSAP from 'gsap'
 import convert from './Utils/covertDivsToSpans.js'
+
+import Experience from './Experience.js'
 
 export default class Preloader extends EventEmitter {
   constructor() {
@@ -345,9 +346,6 @@ export default class Preloader extends EventEmitter {
   }
 
   scale() {
-    this.roomChildren.rectLight.width = 0
-    this.roomChildren.rectLight.height = 0
-
     if (this.device === 'desktop') {
       this.room.scale.set(1, 1, 1)
     } else {

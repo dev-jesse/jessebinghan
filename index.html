@@ -7,13 +7,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui"
     />
-    <!-- content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui" -->
     <title>Jesse Bing Han</title>
   </head>
-  <body class="light-theme">
+  <body class="light-theme" style="display: none">
+    <!-- 3d -->
     <div class="experience">
       <canvas class="experience-canvas"></canvas>
     </div>
+
+    <!-- custom cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
     <!-- Preloader -->
     <div class="preloader">
@@ -36,7 +40,7 @@
             />
           </svg>
         </div>
-        <button class="toggle-button">
+        <button class="toggle-button link-item">
           <div class="toggle-circle"></div>
         </button>
         <div class="moon-wrapper">
@@ -53,7 +57,7 @@
         <section class="hero">
           <div class="hero-wrapper">
             <!-- Intro Stuff -->
-            <div class="intro-text">Welcome to my portfolio!</div>
+            <div class="intro-text">Scroll to Start</div>
             <div class="arrow-svg-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
                 <path
@@ -189,6 +193,6 @@
         </section>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.js" rel="preload"></script>
   </body>
 </html>
