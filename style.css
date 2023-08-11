@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Neue Montreal';
-  src: url('fonts/PPNeueMontreal-Medium.otf');
+  src: url('../public/fonts/PPNeueMontreal-Medium.otf');
 }
 
 * {
