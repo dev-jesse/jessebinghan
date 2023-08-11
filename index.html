@@ -71,7 +71,7 @@
               <h1 class="hero-main-title first-main">Jesse</h1>
               <h1 class="hero-main-title second-main">Bing Han</h1>
               <p class="hero-main-description">
-                CS Specialist @ University of Toronto
+                CS Spec. @ University of Toronto
               </p>
             </div>
 
@@ -86,109 +86,351 @@
 
         <div class="first-move section-margin"></div>
 
-        <section class="first-section section left">
-          <div class="progress-wrapper progress-bar-wrapper-left">
-            <div class="progress-bar"></div>
+        <section class="first-section section code-block-wrapper left">
+          <!-- Start Circles -->
+          <div class="circles-wrapper">
+            <div class="float-circles">
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #bbff99 0%,
+                    #ffec99 37%,
+                    #ff9999 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #dbf26e 0%,
+                    #61fa74 37%,
+                    #1cfdd6 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #c2eaba 0%,
+                    #c5f4e0 37%,
+                    #efc2cf 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #cdedfd 0%,
+                    #ffec82 37%,
+                    #ffcfd2 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #1dd1a1 0%, #d3d3d3 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+                "
+              ></li>
+            </div>
           </div>
+          <!-- End Circles -->
+          <div class="code-wrapper">
+            <div class="code-title">AboutMe.js</div>
+            <pre class="code-text">
+<span class='const'>const</span> <span class="variable">name</span> <span class="character">=</span> <span class="string">"Jesse Bing Han"</span>
+<span class='const'>const</span> <span class="variable">age</span> <span class="character">=</span> <span class="number">21</span>
+<span class='const'>const</span> <span class="variable">school</span> <span class="character">=</span> <span class="string">"University of Toronto"</span>
+<span class='const'>const</span> <span class="variable">profession</span> <span class="character">=</span> <span class="string">"Software Developer"</span>
+<span class='const'>const</span> <span class="variable">experties</span> <span class="character">=</span> <span class="string">"Working with the Web..."</span>
 
-          <div class="section-intro-wrapper">
-            <h1 class="section-title">
-              <span class="section-title-text">About Me</span>
-              <div class="section-title-decoration styleOne"></div>
-              <div class="section-title-decoration styleTwo"></div>
-              <div class="section-title-decoration styleThree"></div>
-            </h1>
-            <span class="section-number">01</span>
-          </div>
+<span class='const'>let</span> <span class="variable">skills</span> <span class="character">=</span> <span class="bracket">{</span>
+    <span class="character">fullstack</span> <span class="character">:</span> <span class="bracket">{</span>
+        <span class="character">frontend</span> <span class="character">:</span> <span class="bracket">[</span><span class='string'>"React"</span><span class="character">,</span> <span class="string">"Next.js"</span><span class="character">,</span> <span class="string">"Tailwind"</span><span class="bracket">]</span><span class="character">,</span>
+        <span class="character">backend</span> <span class="character">:</span> <span class="bracket">[</span><span class='string'>"Django"</span><span class="character">,</span> <span class="string">"Express"</span><span class="bracket">]</span>
+    <span class="bracket">}</span><span class="character">,</span>
+    <span class="character">ai_ml</span> <span class="character">:</span> <span class="bracket">[</span>
+        <span class="string">ChatGPT API</span><span class="character">,</span>
+        <span class="string">TensorFlow/Keras</span><span class="character">,</span>
+        <span class="string">scikit-learn</span><span class="character">,</span>
+        <span class="string">NumPy</span><span class="character">,</span>
+        <span class="string">pandas</span><span class="character">,</span>
+    <span class="bracket">]</span>
+<span class="bracket">}</span>
 
-          <div class="section-detail-wrapper">
-            <!-- <h3 class="section-heading">Hello!</h3> -->
-            <p class="section-text">
-              Hi there 👋! I'm a third-year digital media student from UK
-              currently studying in Germany. My dream is to work for Disney or
-              Pixar one day.
-            </p>
-            <p class="section-text">
-              I love creating art and playing with my cats! I also like drinking
-              bubble tea and going for hikes! Totally hippie lol ✌️. Welcome to
-              my portfolio!
-            </p>
+<span class="comment">// Click below to contact me</span>
+<span class="const">const</span> <span class="function">emailMe</span> <span class="character">=</span> <span class="bracket">()</span> <span class="character">=></span> <span class="bracket">{</span>
+    <span class="string"><a target='_blank' href="mailto:jessebing.han@mail.utoronto.ca" class='link-item code-link'>"jessebing.han@mail.utoronto.ca"</a></span>
+<span class="bracket">}</span>
+<span class="const">const</span> <span class="function">callMe</span> <span class="character">=</span> <span class="bracket">()</span> <span class="character">=></span> <span class="number"><a target='_blank' href="tel:+14034372827" class='link-item code-link'>4034372827</a></span>
+
+<span class="const">const</span> <span class="function">downloadCV</span> <span class="character">=</span> <span class="bracket">(file)</span> <span class="character">=></span> <span class="bracket">{</span>
+  <span class="string"><a target='_blank' href="/jessebinghan.pdf" download class='link-item code-link'>"/tmp/usrs/epicresumefile.pdf"</a></span>
+<span class="bracket">}</span>
+            </pre>
           </div>
         </section>
 
         <div class="second-move section-margin"></div>
 
-        <section class="second-section section right">
-          <div class="progress-wrapper progress-bar-wrapper-right">
-            <div class="progress-bar blue-background"></div>
+        <section class="second-section section code-block-wrapper right">
+          <div class="circles-wrapper">
+            <div class="float-circles">
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #bbff99 0%,
+                    #ffec99 37%,
+                    #ff9999 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #dbf26e 0%,
+                    #61fa74 37%,
+                    #1cfdd6 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #c2eaba 0%,
+                    #c5f4e0 37%,
+                    #efc2cf 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #cdedfd 0%,
+                    #ffec82 37%,
+                    #ffcfd2 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #1dd1a1 0%, #d3d3d3 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+                "
+              ></li>
+            </div>
           </div>
+          <!-- End Circles -->
+          <div class="code-wrapper">
+            <div class="code-title">projects.py</div>
+            <pre class="code-text">
+<span class="def">class</span> <span class="pfunc">Project</span>:
+  <span class='def'>def</span> <span class="function">__init__(</span>self, <span class="pvar">tag</span><span class="pequal">=</span><span class="function">None)</span>:
+      self.details <span class="pequal">=</span> <span class="function">None</span>
+      self.tags <span class="pequal">=</span> <span class="pvar">tag</span>
 
-          <div class="section-intro-wrapper blue-text blue-border">
-            <h1 class="section-title blue-text blue-border">
-              <span class="section-title-text blue-text">My Work</span>
-              <div class="section-title-decoration styleOne blue-border"></div>
-              <div class="section-title-decoration styleTwo blue-border"></div>
-              <div
-                class="section-title-decoration styleThree blue-background blue-border"
-              ></div>
-            </h1>
-            <span class="section-number blue-text">02</span>
-          </div>
+  def <span class="pfunc">set_details</span><span class="function">(</span>self, <span class='pvar'>details</span><span class="function">)</span>:
+      self.details <span class="pequal">=</span> <span class='pvar'>details</span>
 
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">Candycane Village</h3>
-            <p class="section-text">
-              This project is in progress but it's about a super colorful
-              village where the entire world including the people are candies.
-              So far the story is that they are set out to explore their "space"
-              only to realize it's a human that will try to destroy them.
-            </p>
-            <h3 class="section-heading">Rebecca's Reddish Radishes</h3>
-            <p class="section-text">
-              Oh what's that? Why, it's a red radish! Oop, another one! In this
-              playful and comedy animation, Rebecca, a young farmer, decided to
-              plant radishes for the first time, but there is a big twist!
-            </p>
-            <h3 class="section-heading">Flora</h3>
-            <p class="section-text">
-              A heartwarming story about a little orphan girl who tries to find
-              her way back home.
-            </p>
+portfolio <span class="pequal">=</span> <span class="pfunc">Project</span><span class="function">(</span><span class='pstring'>"Frontend Development"</span><span class='function'>)</span>
+portfolio.<span class='pfunc'>set_details</span><span class='function'>(</span>
+  <span class='bracket'>[</span>
+      <span class='pstring'>"I developed an interactive 'room portfolio'"</span>,
+      <span class='pstring'>"using Blender and Three.js.",</span>
+      <span class='pstring'>"By utilizing Blender and DRACO compression,",</span>
+      <span class='pstring'>"I achieved a 10x reduction in glTF model",</span>
+      <span class='pstring'>"size, ensuring swift client-side loading.",</span>
+      <span class='pstring'>"The portfolio showcases advanced animation",</span>
+      <span class='pstring'>"techniques, including smooth scroll and",</span>
+      <span class='pstring'>"ScrollTrigger, for an elegant UI.",</span>
+      <span class='pstring'>"I further enhanced animation fluidity",</span>
+      <span class='pstring'>"with methods like linear interpolation",</span>
+      <span class='pstring'>"and SmoothDamp. The entire application",</span>
+      <span class='pstring'>"is designed around the Singleton principle,",</span>
+      <span class='pstring'>"providing an immersive and evolving user",</span>
+      <span class='pstring'>"experience.",</span>
+  <span class='bracket'>]</span>
+<span class='function'>)</span>
+
+kunjiajia <span class="pequal">=</span> <span class="pfunc">Project</span><span class="function">(</span><span class='pstring'>"Teaching Platform"</span><span class='function'>)</span>
+kunjiajia.<span class='pfunc'>set_details</span><span class='function'>(</span>
+  <span class='bracket'>[</span>
+                                  
+      <span class='pstring'>"I developed a website named 'Kunjiajia'"</span>,
+      <span class='pstring'>"dedicated to assisting students in",</span>
+      <span class='pstring'>"mastering data structures and algorithms.",</span>
+      <span class='pstring'>"My professor has adopted it as a",</span>
+      <span class='pstring'>"supplementary resource for Data Structure",</span>
+      <span class='pstring'>"and Algorithm classes, benefiting over",</span>
+      <span class='pstring'>"100 students. The platform offers a",</span>
+      <span class='pstring'>"comprehensive curriculum that delves deeply",</span>
+      <span class='pstring'>"into both foundational and advanced topics,",</span>
+      <span class='pstring'>"complemented by intuitive code solutions.",</span>
+  <span class='bracket'>]</span>
+<span class='function'>)</span>
+
+<span class="comment">#  Need to see more of my projects?</span>
+<a target='_blank' href="/jessebinghan.pdf" download class='link-item code-link'>click_here <span class="pequal">= lambda</span> <span class="pvar">cv</span> : <span class="pvar">cv</span>.<span class="pfunc">download</span><span class="function">()</span></a>
+            </pre>
           </div>
         </section>
 
         <div class="third-move section-margin"></div>
 
         <section class="third-section section left">
-          <div class="progress-wrapper progress-bar-wrapper-left">
-            <div class="progress-bar green-background"></div>
+          <!-- Start Circles -->
+          <div class="circles-wrapper">
+            <div class="float-circles">
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #bbff99 0%,
+                    #ffec99 37%,
+                    #ff9999 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #dbf26e 0%,
+                    #61fa74 37%,
+                    #1cfdd6 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #c2eaba 0%,
+                    #c5f4e0 37%,
+                    #efc2cf 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(
+                    319deg,
+                    #cdedfd 0%,
+                    #ffec82 37%,
+                    #ffcfd2 100%
+                  );
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #1dd1a1 0%, #d3d3d3 74%);
+                "
+              ></li>
+              <li
+                style="
+                  --color: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+                "
+              ></li>
+            </div>
           </div>
+          <!-- End Circles -->
+          <div class="code-wrapper">
+            <div class="code-title">goodbye.java</div>
+            <pre class="code-text">
+<span class="function">public class</span> <span class="pfunc">Acknowledgement</span> <span class="bracket">{</span>
+    <span class="function">public static void</span> main<span class='number'>(</span><span class='pfunc'>String</span> []args<span class="number">)</span><span class="bracket">{</span>
+        <span class='pfunc'>System</span>.out.println<span class='number'>(</span><span class='string'>"Thank you for viewing my site!"</span><span class='number'>)</span>
+    <span class="bracket">}</span>
 
-          <div class="section-intro-wrapper green-text green-border">
-            <h1 class="section-title green-text green-border">
-              <span class="section-title-text green-text">Contact Me</span>
-              <div class="section-title-decoration styleOne green-border"></div>
-              <div class="section-title-decoration styleTwo green-border"></div>
-              <div
-                class="section-title-decoration styleThree green-background green-border"
-              ></div>
-            </h1>
-            <span class="section-number green-text">03</span>
-          </div>
+    <span class="function">void</span> inspiration<span class='number'>(</span><span class="number">)</span><span class="bracket">{</span>
+        <span class='pfunc'>String</span> pageInspo <span class="pequal">=</span> <span class="string">"Bokoko"</span>
+        <span class='pfunc'>String</span> animationTechniques1 <span class="pequal">=</span> <span class="string">"CodeGrid"</span>
+        <span class='pfunc'>String</span> animationTechniques2 <span class="pequal">=</span> <span class="string">"Woan Coding"</span>
+    <span class="bracket">}</span>
 
-          <div class="section-detail-wrapper">
-            <h3 class="section-heading">ArtStation</h3>
-            <p class="section-text">
-              I post all my work here. I don't want to link it yet because I
-              want to sort it out a little bit!
-            </p>
-            <h3 class="section-heading">Instagram</h3>
-            <p class="section-text">
-              Check out my personal instagram for travel pics and food and
-              stuff.
-            </p>
-            <h3 class="section-heading">LinkedIn</h3>
-            <p class="section-text">Career updates and so much more!</p>
+    <span class="function">void</span> nextSteps<span class='number'>(</span><span class="number">)</span><span class="bracket">{</span>
+      <span class='pfunc'>String</span> email <span class="pequal">=</span> <span class="string"><a target='_blank' href="mailto:jessebing.han@mail.utoronto.ca" class='link-item code-link'>"jessebing.han@mail.utoronto.ca"</a></span>
+      <span class='pfunc'>int</span> phone <span class="pequal">=</span> <span class="number"><a target='_blank' href="tel:+14034372827" class='link-item code-link'>4034372827</a></span>
+      <span class='pfunc'>String</span> linkedin <span class="pequal">=</span> <span class="string"><a target='_blank' href="https://linkedin.com/in/jessebinghan" class='link-item code-link'>"/in/jessebinghan"</a></span>
+  <span class="bracket">}</span>
+<span class="bracket">}</span>
+            </pre>
           </div>
         </section>
       </div>

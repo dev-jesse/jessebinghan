@@ -38,6 +38,7 @@ export default class Controls {
 
   setupASScroll() {
     // https://github.com/ashthornton/asscroll
+    console.log(this.room)
     const asscroll = new ASScroll({
       ease: 0.1,
       disableRaf: true,
@@ -106,16 +107,46 @@ export default class Controls {
             // markers: true,
             invalidateOnRefresh: true,
           },
-        })
-        this.firstMoveTimeline.fromTo(
-          this.room.position,
-          { x: 0, y: 0, z: 0 },
-          {
-            x: () => {
-              return this.sizes.width * 0.0014
-            },
-          }
-        )
+        }).to(this.camera.orthographicCamera.position, { x: -2.38 })
+
+        // Scale down perfectly SECOND
+        // .to(
+        //   this.room.scale,
+        //   {
+        //     x: 0.4,
+        //     y: 0.4,
+        //     z: 0.4,
+        //   },
+        //   'same'
+        // )
+        // .to(
+        //   this.room.position,
+        //   {
+        //     y: 0.6,
+        //   },
+        //   'same'
+        // )
+
+        //  ORIGINAL
+        // this.firstMoveTimeline = new GSAP.timeline({
+        //   scrollTrigger: {
+        //     trigger: '.first-move',
+        //     start: 'top top',
+        //     end: 'bottom bottom',
+        //     scrub: 0.6,
+        //     // markers: true,
+        //     invalidateOnRefresh: true,
+        //   },
+        // })
+        // this.firstMoveTimeline.fromTo(
+        //   this.room.position,
+        //   { x: 0, y: 0, z: 0 },
+        //   {
+        //     x: () => {
+        //       return this.sizes.width * 0.0014
+        //     },
+        //   }
+        // )
 
         // Second section -----------------------------------------
         this.secondMoveTimeline = new GSAP.timeline({
@@ -131,10 +162,10 @@ export default class Controls {
             this.room.position,
             {
               x: () => {
-                return 1
+                return -0.9
               },
               z: () => {
-                return this.sizes.height * 0.0032
+                return this.sizes.height * 0.0012
               },
             },
             'same'
@@ -166,16 +197,28 @@ export default class Controls {
             scrub: 0.6,
             invalidateOnRefresh: true,
           },
-        }).to(this.camera.orthographicCamera.position, {
-          y: 1.5,
-          x: -4.1,
         })
+          .to(
+            this.camera.orthographicCamera.position,
+            {
+              y: 3.4,
+              x: -6.1,
+            },
+            'third'
+          )
+          .to(
+            this.room.scale,
+            {
+              x: 3,
+              y: 3,
+              z: 3,
+            },
+            'third'
+          )
       },
 
       // Mobile
       '(max-width: 968px)': () => {
-        // console.log("fired mobile");
-
         // Resets
         this.room.scale.set(0.6, 0.6, 0.6)
         this.room.position.set(0, 0, 0)
@@ -190,7 +233,7 @@ export default class Controls {
             start: 'top top',
             end: 'bottom bottom',
             scrub: 0.6,
-            // invalidateOnRefresh: true,
+            invalidateOnRefresh: true,
           },
         }).to(this.room.scale, {
           x: 0.5,
@@ -211,9 +254,9 @@ export default class Controls {
           .to(
             this.room.scale,
             {
-              x: 0.25,
-              y: 0.25,
-              z: 0.25,
+              x: 2,
+              y: 2,
+              z: 2,
             },
             'same'
           )
@@ -229,6 +272,7 @@ export default class Controls {
             this.room.position,
             {
               x: 1.5,
+              y: 0.3,
             },
             'same'
           )
@@ -242,9 +286,24 @@ export default class Controls {
             scrub: 0.6,
             invalidateOnRefresh: true,
           },
-        }).to(this.room.position, {
-          z: -4.5,
         })
+          .to(
+            this.room.position,
+            {
+              x: 1.14,
+              z: -1.2,
+            },
+            'third'
+          )
+          .to(
+            this.room.scale,
+            {
+              x: 1.2,
+              y: 1.2,
+              z: 1.2,
+            },
+            'third'
+          )
       },
 
       // all
@@ -273,7 +332,7 @@ export default class Controls {
                 scrub: 0.6,
               },
             })
-          } else {
+          } else if (section.classList.contains('left')) {
             GSAP.to(section, {
               borderTopRightRadius: 10,
               scrollTrigger: {
@@ -375,7 +434,6 @@ export default class Controls {
         })
 
         this.room.children.forEach((child) => {
-          console.log(child.name)
           if (child.name === 'Mini_Plane') {
             this.first = GSAP.to(child.position, {
               x: -0.900006,

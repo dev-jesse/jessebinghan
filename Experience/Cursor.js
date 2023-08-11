@@ -46,13 +46,31 @@ export default class Cursor {
       mouseY = e.clientY
     })
 
-    document.querySelector('.link-item').addEventListener('mouseenter', () => {
-      cursor.classList.add('active')
-      follower.classList.add('active')
-    })
-    document.querySelector('.link-item').addEventListener('mouseleave', () => {
-      cursor.classList.remove('active')
-      follower.classList.remove('active')
-    })
+    const linkItems = document.querySelectorAll('.link-item')
+
+    for (let i = 0; i < linkItems.length; i++) {
+      linkItems[i].addEventListener('mouseenter', () => {
+        cursor.classList.add('active')
+        follower.classList.add('active')
+      })
+
+      linkItems[i].addEventListener('mouseleave', () => {
+        cursor.classList.remove('active')
+        follower.classList.remove('active')
+      })
+    }
+
+    // document
+    //   .querySelectorAll('.link-item')
+    //   .addEventListener('mouseenter', () => {
+    //     cursor.classList.add('active')
+    //     follower.classList.add('active')
+    //   })
+    // document
+    //   .querySelectorAll('.link-item')
+    //   .addEventListener('mouseleave', () => {
+    //     cursor.classList.remove('active')
+    //     follower.classList.remove('active')
+    //   })
   }
 }
