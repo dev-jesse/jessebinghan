@@ -465,7 +465,7 @@ svg {
   }
 
   100% {
-    transform: translateY(-200vh) rotate(720deg);
+    transform: translateY(-3000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }
@@ -729,6 +729,7 @@ svg {
   }
   .hero-main {
     top: 120px;
+    left: 30px;
     /* bottom: 120px; */
   }
   .hero-second {
