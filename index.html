@@ -280,13 +280,16 @@
           <div class="code-wrapper">
             <div class="code-title">projects.py</div>
             <pre class="code-text">
+
+
+<span class="def">@dataclass</span>
 <span class="def">class</span> <span class="pfunc">Project</span>:
   <span class='def'>def</span> <span class="function">__init__(</span>self, <span class="pvar">tag</span><span class="pequal">=</span><span class="function">None)</span>:
-      self.details <span class="pequal">=</span> <span class="function">None</span>
+      self._details <span class="pequal">=</span> <span class="function">None</span>
       self.tags <span class="pequal">=</span> <span class="pvar">tag</span>
 
   def <span class="pfunc">set_details</span><span class="function">(</span>self, <span class='pvar'>details</span><span class="function">)</span>:
-      self.details <span class="pequal">=</span> <span class='pvar'>details</span>
+      self._details <span class="pequal">=</span> <span class='pvar'>details</span>
 
 portfolio <span class="pequal">=</span> <span class="pfunc">Project</span><span class="function">(</span><span class='pstring'>"Frontend Development"</span><span class='function'>)</span>
 portfolio.<span class='pfunc'>set_details</span><span class='function'>(</span>
@@ -414,7 +417,7 @@ kunjiajia.<span class='pfunc'>set_details</span><span class='function'>(</span>
             <div class="code-title">goodbye.java</div>
             <pre class="code-text">
 <span class="function">public class</span> <span class="pfunc">Acknowledgement</span> <span class="bracket">{</span>
-  <span class="function">public static void</span> main<span class='number'>(</span><span class='pfunc'>String</span> []args<span class="number">)</span><span class="bracket">{</span>
+  <span class="function">public static void</span> main<span class='number'>(</span><span class='pfunc'>String</span> args[]<span class="number">)</span><span class="bracket">{</span>
     <span class='pfunc'>System</span>.out.println<span class='number'>(</span><span class='string'>"Bye :)"</span><span class='number'>)</span>;
   <span class="bracket">}</span>
 
